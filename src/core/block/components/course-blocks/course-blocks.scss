@@ -1,0 +1,83 @@
+$core-side-blocks-max-small-width: 300px;
+$core-side-blocks-min-small-width: 25%;
+
+$core-side-blocks-max-width: 320px;
+$core-side-blocks-min-width: 30%;
+
+.core-course-block-with-blocks > .scroll-content {
+    overflow-y: visible;
+}
+
+ion-app.app-root core-block-course-blocks {
+
+    &.core-no-blocks {
+        .core-course-blocks-content > ion-content {
+            height: auto;
+
+            > .scroll-content {
+                overflow-y: visible;
+                position: relative;
+            }
+        }
+    }
+
+    &.core-has-blocks {
+        @include media-breakpoint-up(md) {
+            @include position(0, 0, 0, 0);
+
+            position: absolute;
+
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .core-course-blocks-content {
+                min-width: calc(100% - #{($core-side-blocks-max-small-width)});
+                max-width: calc(100% - #{($core-side-blocks-min-small-width)});
+                z-index: 0;
+                flex: 1;
+                box-shadow: none !important;
+            }
+
+            ion-content.core-course-blocks-side {
+                transform: none !important;
+                position: sticky;
+                @include position(0, 0, 0, auto);
+                z-index: 30;
+                max-width: $core-side-blocks-max-small-width;
+                min-width: $core-side-blocks-min-small-width;
+                @include border-start(1px, solid, $list-md-border-color);
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .core-course-blocks-content {
+                min-width: calc(100% - #{($core-side-blocks-max-width)});
+                max-width: calc(100% - #{($core-side-blocks-min-width)});
+            }
+
+            ion-content.core-course-blocks-side {
+                max-width: $core-side-blocks-max-width;
+                min-width: $core-side-blocks-min-width;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            // Disable scroll on individual columns.
+            .core-course-blocks-content > ion-content,
+            ion-content.core-course-blocks-side {
+                height: auto;
+
+                &.core-hide-blocks {
+                    display: none;
+                }
+
+                > .scroll-content {
+                    overflow-y: visible;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
