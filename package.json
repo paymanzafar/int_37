@@ -1,19 +1,15 @@
 {
-  "name": "moodlemobile",
+  "name": "MagAmooz",
   "version": "3.7.1",
-  "description": "The official app for Moodle.",
+  "description": "MAGFA E-Learning Application.",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "MAGFA",
+    "email": "admin@magamooz.com"
   },
   "config": {
     "ionic_webpack": "./config/webpack.config.js",
     "ionic_copy": "./config/copy.config.js",
     "ionic_sass": "./config/sass.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/moodlehq/moodlemobile2.git"
   },
   "license": "Apache-2.0",
   "licenses": [
@@ -84,7 +80,7 @@
     "cordova-android": "7.1.2",
     "cordova-android-support-gradle-release": "^3.0.1",
     "cordova-clipboard": "^1.3.0",
-    "cordova-ios": "4.5.5",
+    "cordova-ios": "^4.5.5",
     "cordova-plugin-badge": "^0.8.8",
     "cordova-plugin-camera": "^4.1.0",
     "cordova-plugin-customurlscheme": "^4.4.0",
