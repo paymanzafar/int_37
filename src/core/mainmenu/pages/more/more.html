@@ -33,10 +33,7 @@
             <ion-icon name="globe" item-start aria-hidden="true"></ion-icon>
             <p>{{ 'core.mainmenu.website' | translate }}</p>
         </a>
-        <a *ngIf="showHelp" ion-item [href]="docsUrl" core-link autoLogin="no" title="{{ 'core.mainmenu.help' | translate }}">
-            <ion-icon name="help-buoy" item-start aria-hidden="true"></ion-icon>
-            <p>{{ 'core.mainmenu.help' | translate }}</p>
-        </a>
+        
         <a ion-item (click)="openSettings()" title="{{ 'core.mainmenu.appsettings' | translate }}">
             <ion-icon name="cog" item-start aria-hidden="true"></ion-icon>
             <p>{{ 'core.mainmenu.appsettings' | translate }}</p>

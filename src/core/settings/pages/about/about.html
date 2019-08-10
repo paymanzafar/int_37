@@ -7,23 +7,7 @@
     <ion-item text-wrap>
         <h2>{{ appName }} {{ versionName }}</h2>
     </ion-item>
-    <ion-item-group>
-        <ion-item-divider text-wrap>
-            {{ 'core.settings.license' | translate }}
-        </ion-item-divider>
-        <ion-item text-wrap>
-            <h2>Apache 2.0</h2>
-            <p><a href="http://www.apache.org/licenses/LICENSE-2.0" core-link auto-login="no">http://www.apache.org/licenses/LICENSE-2.0</a></p>
-        </ion-item>
-    </ion-item-group>
-    <ion-item-group *ngIf="privacyPolicy">
-        <ion-item-divider text-wrap>
-            {{ 'core.settings.privacypolicy' | translate }}
-        </ion-item-divider>
-        <ion-item text-wrap>
-            <p><a [href]="privacyPolicy" core-link auto-login="no">{{ privacyPolicy }}</a></p>
-        </ion-item>
-    </ion-item-group>
+    
     <ion-item-group>
         <ion-item-divider text-wrap>
             {{ 'core.settings.deviceinfo' | translate }}
@@ -46,10 +30,7 @@
             <p><a *ngIf="fsClickable" [href]="fileSystemRoot" core-link auto-login="no">{{ fileSystemRoot }}</a></p>
             <p *ngIf="!fsClickable">{{ fileSystemRoot }}</p>
         </ion-item>
-        <ion-item text-wrap *ngIf="navigator && navigator.userAgent">
-            <h2>{{ 'core.settings.navigatoruseragent' | translate}}</h2>
-            <p>{{ navigator.userAgent }}</p>
-        </ion-item>
+        
         <ion-item text-wrap *ngIf="navigator && navigator.language">
             <h2>{{ 'core.settings.navigatorlanguage' | translate}}</h2>
             <p>{{ navigator.language }}</p>
@@ -82,10 +63,7 @@
             <h2>{{ 'core.settings.wificonnection' | translate}}</h2>
             <p>{{ wifiConnection | translate }}</p>
         </ion-item>
-        <ion-item text-wrap *ngIf="deviceWebWorkers">
-            <h2>{{ 'core.settings.devicewebworkers' | translate}}</h2>
-            <p>{{ deviceWebWorkers | translate }}</p>
-        </ion-item>
+        
         <ion-item text-wrap *ngIf="device && device.cordova">
             <h2>{{ 'core.settings.cordovaversion' | translate}}</h2>
             <p>{{ device.cordova }}</p>

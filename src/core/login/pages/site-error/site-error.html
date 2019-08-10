@@ -14,7 +14,7 @@
     <p>{{ 'core.login.problemconnectingerror' | translate }}</p>
     <p padding>{{siteUrl}}</p>
     <p>{{ 'core.login.problemconnectingerrorcontinue' | translate }}</p>
-    <button ion-button block (click)="closeModal()">{{ 'core.tryagain' | translate }}</button>
+    <button ion-button block round large (click)="closeModal()">{{ 'core.tryagain' | translate }}</button>
     <h3>{{ 'core.login.stillcantconnect' | translate }}</h3>
     <p>{{ 'core.login.contactyouradministrator' | translate }}</p>
     <p *ngIf="issue">
