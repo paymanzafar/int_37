@@ -10,7 +10,7 @@
         </ion-item-divider>
         <ion-item text-wrap>
             <ion-label>{{ 'core.settings.enablesyncwifi' | translate }}</ion-label>
-            <ion-toggle item-end [(ngModel)]="syncOnlyOnWifi" (ngModelChange)="syncOnlyOnWifiChanged()">
+            <ion-toggle value="off" item-end [(ngModel)]="syncOnlyOnWifi" (ngModelChange)="syncOnlyOnWifiChanged()">
             </ion-toggle>
         </ion-item>
         <ion-item-divider>

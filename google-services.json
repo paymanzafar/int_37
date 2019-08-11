@@ -1,42 +1,47 @@
 {
   "project_info": {
-    "project_number": "1041111699569",
-    "firebase_url": "https://magamooz-push.firebaseio.com",
-    "project_id": "magamooz-push",
-    "storage_bucket": "magamooz-push.appspot.com"
+    "project_number": "257739236534",
+    "firebase_url": "https://magamooz.firebaseio.com",
+    "project_id": "magamooz",
+    "storage_bucket": "magamooz.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1041111699569:android:2fd13a73b7db83ec",
+        "mobilesdk_app_id": "1:257739236534:android:2fd13a73b7db83ec",
         "android_client_info": {
           "package_name": "com.magfalms.magfaapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1041111699569-0p6f7r7mn57trurdqrm1du4dk8kro9aj.apps.googleusercontent.com",
+          "client_id": "257739236534-fupejgud2m5pojad5veoeceepgs76nd9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD3Ow7G0_ZL-crXvvWDdvoacrihq6ReYi8"
+          "current_key": "AIzaSyDthhkw5_xm6iRgAbPQ2BanB0g1b5pkLnM"
         },
 		{
-          "current_key": "AIzaSyDBtwl7aAHsaST6Ya6RetFDKZIr0dZyaiQ"
+          "current_key": "AIzaSyCgz0VQRHlLkfXq297RgA6KQsM0Lz_6tC4"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257739236534-fupejgud2m5pojad5veoeceepgs76nd9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "257739236534-g757t0v9ei0cu5krkf2gh0ij140v0c30.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.magfalms.magfaapp"
+              }
+            }
+          ]
         }
       }
     }

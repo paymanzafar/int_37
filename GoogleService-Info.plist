@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1041111699569-fnci2ok1iq3lst61ucpom700hnabh9gf.apps.googleusercontent.com</string>
+	<string>257739236534-g757t0v9ei0cu5krkf2gh0ij140v0c30.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1041111699569-fnci2ok1iq3lst61ucpom700hnabh9gf</string>
+	<string>com.googleusercontent.apps.257739236534-g757t0v9ei0cu5krkf2gh0ij140v0c30</string>
 	<key>API_KEY</key>
-	<string>AIzaSyApU3yZcFrYbV4_euaGtzuTzb_L730cfdA</string>
+	<string>AIzaSyBVB0XonSP80g2ZSJZVGZ6ZFskZY4LmR24</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1041111699569</string>
+	<string>257739236534</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.magfalms.magfaapp</string>
 	<key>PROJECT_ID</key>
-	<string>magamooz-push</string>
+	<string>magamooz</string>
 	<key>STORAGE_BUCKET</key>
-	<string>magamooz-push.appspot.com</string>
+	<string>magamooz.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,12 +25,12 @@
 	<key>IS_APPINVITE_ENABLED</key>
 	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<false></false>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1041111699569:ios:2fd13a73b7db83ec</string>
+	<string>1:257739236534:ios:2fd13a73b7db83ec</string>
 	<key>DATABASE_URL</key>
-	<string>https://magamooz-push.firebaseio.com</string>
+	<string>https://magamooz.firebaseio.com</string>
 </dict>
 </plist>
